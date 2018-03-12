@@ -1,0 +1,68 @@
+h1 {
+	border: 1px solid black;
+	background-color: #0000FF;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 0.25em;
+	width: 40%;
+	margin: 0;
+}
+
+h2 {
+	border: 1px solid black; 
+	background-color: #4A86E8;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 0.25em;
+	margin-top: 0;
+}
+
+.content {
+	border: 1px solid black;
+	font-family: sans-serif; 
+	background-color: #CFE2F3;
+	padding: 0 1em 1em 1em;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.summary {
+	text-decoration: underline;
+}
+
+label {
+	float: left;
+	clear: left;
+	width: 10em;
+}
+
+.form-section {
+	margin: 1em 0;
+}
+
+.full-width-input {
+	display: block;
+	margin-left: 10em;
+}
+
+.full-width-input input {
+	width: 100%;
+}
+
+.password-visible-section {
+	text-align: center;
+}
+
+.reset-password-section {
+	float: left;
+}
+
+.login-button {
+	border: 1px solid black;
+	background-color: #0000FF;
+	color: #FFFFFF;
+	font-size: 1.4em;
+	padding: 0.4em 2em;
+	display: block;
+	margin: 0 auto;
+}

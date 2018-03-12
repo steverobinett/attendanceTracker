@@ -1,49 +1,91 @@
-<?php
-
-?>
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>GFCMSU Attendance App</title>
-    <link rel="stylesheet" href="#">
-  </head>
-  <body>
-    <div>
-  	 <h1>GFCMSU</h1>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>Faculty</title>
+</head>
+
+<body>
+    <!-- Wrapper div -->
+   <div>
+        <!-- Form div -->
+       <div>
+            <form action="#" method="post">
+                    <!-- Title of page -->
+                    <fieldset>
+                        <h1></h1>
+                    </fieldset>
+                    <!-- Select Semester, Course -->
+                    <fieldset>
+                        Select Semester: 
+                        <select name="semester">
+                            <option value="spring">Spring 2018</option>
+                            <option value="summer">Summer 2018</option>
+                            <option value="fall">Fall 2018</option>
+                        </select><br>
+                        Select Course: 
+                        <select name="course">
+                            <option value="CSCI223">CSCI 223</option>
+                            <option value="CSCI219">CSCI 219</option>
+                        </select>
+                    </fieldset>
+                    <!-- Class date, time & roster -->
+                    <fieldset>
+                        <!-- Date div -->
+                        <div>
+                            Date <br>
+                            <input type="date" name="class_date">
+                        </div>
+                        <!-- Class Time div -->
+                        <div>
+                            Class Time <br>
+                            <input list="class_times">
+                                <datalist id="class_times">
+                                    <option value="10:00am - 11:15am">
+                                    <option value="12:00pm - 1:15pm">
+                                    <option value="2:00pm - 3:15pm">
+                                    <option value="4:00pm - 5:15pm">
+                                    <option value="6:00pm - 7:15pm">
+                                </datalist>
+                            <input type="button" value="Retrieve Class Roster">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <!-- Student Name div -->
+                        <div>
+                            Name
+                        </div>
+                        <!-- Attendance Checklist div -->
+                        <div>
+                           On Time <br>
+                           <input type="checkbox"> 
+                        </div>
+                        <div>
+                            Late <br>
+                           <input type="checkbox">
+                        </div>
+                        <div>
+                            Absent <br>
+                           <input type="checkbox">
+                        </div>
+                        <div>
+                            Excused <br>
+                           <input type="checkbox">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                         <textarea name="message" rows="10" cols="100"></textarea> 
+                    </fieldset>
+                    <fieldset>
+                        <input type="button" value="Update">
+                    </fieldset>
+            </form>
+        
+        </div>
+
     </div>
-  	<div>
-  		<h2>Steven Robinett Student Attendance Management System</h2>
-  	</div>
-    <div class="">
-  	<form action="something.php" method="post">
-      <p>Select Semester:
-	<input type="text" name="term">
-      </p>
-      <p>Enter Course::
-        <input type="text" name="course">
-      </p>
-      <p>Date
-        <input type="text" name="date">
-	Class Time
-	<input type="text" name="class_time">
-	<input type="submit" value="Retrieve Class Roster">
-      </p>
-	</form>
-	</div>
-	<div class="">
-	<form action="something.php" method="post">
-	<p>Name
-	On Time
-	Late
-	Absent
-	Excused
-	</p>
-      	<!--insert mysql query, similar to the example Steve showed me to query the database and use a foreach statement to create the name, on time, late, absent, excused line for each student dynamically via php.-->
-	<p>Notes<br>
-	<input type="textarea" name="notes">
-	</p>
-	<input type="submit" value="Update">
-  	</form>
-  </div>
-  </body>
+    
+</body>
 </html>
